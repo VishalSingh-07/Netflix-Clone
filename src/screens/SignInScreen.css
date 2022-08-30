@@ -4,6 +4,8 @@
 	margin-left: auto;
 	margin-right: auto;
 	background: rgba(0, 0, 0, 0.85);
+	border-radius: 15px;
+	border: 0.01px solid rgba(255, 255, 255, 0.514);
 }
 .signUpScreen > form {
 	display: grid;

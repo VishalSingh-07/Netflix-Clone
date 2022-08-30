@@ -1,15 +1,18 @@
 import React, { useRef } from "react"
-import { signup } from "../firebase"
+import { Signup } from "../firebase"
 import { logIn } from "../firebase"
 import "./SignInScreen.css"
 function SignInScreen() {
 	const emailRef = useRef(null)
-	const passwordRef = useRef(null);
-	// const [signup, setSignup] = React.useState(false);
+	const passwordRef = useRef(null)
+	const [signup, setSignup] = React.useState(false)
 
 	const register = (e) => {
 		e.preventDefault()
-		signup(emailRef.current.value, passwordRef.current.value)
+		Signup(
+			emailRef.current.value,
+			passwordRef.current.value,
+		)
 			.then((authUser) => {
 				console.log(authUser)
 			})
@@ -42,17 +45,35 @@ function SignInScreen() {
 	return (
 		<div className="signUpScreen">
 			<form>
-				{/* <h1>{signup ? "Sign Up" : "Sign In"}</h1> */}
-				<h1>Sign in</h1>
+				<h1>{signup ? "Sign Up" : "Sign In"}</h1>
+				{signup && (
+					<input type="text" placeholder="Full Name" />
+				)}
 				<input ref={emailRef} placeholder="Email" type="email" />
 				<input ref={passwordRef} placeholder="Password" type="password" />
-				<button className="" type="submit" onClick={signIn}>
-					Sign In
-				</button>
-				<h4>
-					<span className="signupScreen_gray">New to Netflix? </span>{" "}
-					<span className="signupScreen_link" onClick={register}>
+				{!signup && (
+					<button className="" type="submit" onClick={signIn}>
+						Sign In
+					</button>
+				)}
+
+				{signup && (
+					<button className="" type="submit" onClick={register}>
 						Sign Up Now
+					</button>
+				)}
+
+				<h4>
+					<span className="signupScreen_gray">
+						{signup ? "Already have an account? " : "New to Netflix? "}
+					</span>
+					<span
+						className="signupScreen_link"
+						onClick={() => {
+							setSignup(!signup)
+						}}
+					>
+						{signup ? "Sign In" : "Sign Up Now"}
 					</span>
 				</h4>
 			</form>

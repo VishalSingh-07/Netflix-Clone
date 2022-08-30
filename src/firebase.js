@@ -18,12 +18,11 @@ const firebaseConfig = {
 const firebaseApp = firebase.initializeApp(firebaseConfig)
 const db = getFirestore(firebaseApp)
 const auth = getAuth(firebaseApp)
-
 export default db
-export {auth}
-export function signup(email, password) {
+export { auth }
+export function Signup(email, password) {
 	return createUserWithEmailAndPassword(auth, email, password)
 }
-export function logIn(email, password) {
-	return signInWithEmailAndPassword(auth, email, password)
+export function logIn(email, password,displayaname) {
+	return signInWithEmailAndPassword(auth, email, password,displayaname)
 }
