@@ -9,10 +9,11 @@
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 8%;
-	max-width: 800px;
+	max-width: 1000px;
 }
 .profileScreen_info {
 	display: flex;
+	margin-top: 3rem;
 }
 .profileScreen_body > h1 {
 	font-size: 60px;
@@ -22,33 +23,112 @@
 }
 .profileScreen_info > img {
 	height: 100px;
+	border-radius: 25px;
 }
 .profileScreen_details {
 	color: white;
 	margin-left: 25px;
 	flex: 1;
+	display: flex;
+	flex-direction: row;
+	gap: 1%;
+}
+.Motivator {
+	text-align: center;
+	margin-top: 4rem;
+	margin-bottom: 1rem;
 }
 .profileScreen_details > h2 {
-	background-color: gray;
 	padding: 15px;
-	font-size: 15px;
-	padding-left: 20px;
+	font-size: 30px;
+	padding-left: 40px;
 }
 .profileScreen_signOut {
 	padding: 10px 20px;
 	font-size: 1rem;
-	margin-top: 5%;
-	width: 100%;
+	margin-left: 10rem;
+	width: 15%;
+	height: 60%;
 	color: #fff;
 	background-color: #e50914;
 	font-weight: 600;
 	border: none;
 	cursor: pointer;
+	border-radius: 10px;
+	transition: transform 400ms;
+}
+.profileScreen_signOut:hover {
+	transform: scale(1.09);
+	opacity: 1;
 }
 .profileScreen_plans {
 	margin-top: 20px;
 }
-.profileScreen_plans > h3 {
+.profileScreen_plans > h5 {
 	border-bottom: 2px solid #282c2d;
 	padding-bottom: 10px;
 }
+
+.profileScreen_plans > p {
+	border-bottom: 1px solid #282c2d;
+	padding-bottom: 10px;
+}
+.Netflix_plans {
+	display: flex;
+	flex-direction: row;
+	gap: 5%;
+	width: 120%;
+}
+.profileScreen_plan {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px;
+	opacity: 1;
+	border: 1px solid red;
+	border-radius: 10px;
+	z-index: 1;
+	margin-top: 4rem;
+	text-align: center;
+	width: 120%;
+	background-color: #fff;
+	color: #282c2d;
+	transition: transform 400ms;
+}
+.profileScreen_plan:hover {
+	transform: scale(1.09);
+	opacity: 1;
+}
+.profileScreen_planInfo > h5 {
+	font-size: 1.5rem;
+	color: #000;
+	margin-bottom: 15px;
+}
+.profileScreen_planInfo > p {
+	font-size: 1rem;
+	font-weight: 600;
+	margin-top: 30px;
+}
+.profileScreen_planInfo > h4 {
+	font-size: 1.3rem;
+	margin: 30px 0 30px 0;
+}
+.profileScreen_plan:hover {
+	opacity: 1;
+}
+
+.profileScreen_plan > button {
+	padding: 10px 20px;
+	font-size: 1rem;
+	color: white;
+	background-color: #e50914;
+	cursor: pointer;
+	font-weight: 600;
+	display: block;
+	border: none;
+	max-height: 50px;
+	border-radius: 7px;
+}
+/* .profileScreen_disabled {
+    background-color: grey !important;
+} */

@@ -21,6 +21,7 @@ function App() {
 					login({
 						uid: userAuth.uid,
 						email: userAuth.email,
+						displayname:userAuth.displayName
 					})
 				)
 			} else {

@@ -1,0 +1,10 @@
+.LinkCard {
+	display: grid;
+      grid-template-columns: repeat(4,1fr);
+      row-gap: 0.5rem;
+}
+a:hover{
+      cursor:pointer;
+      text-decoration: underline;
+
+}

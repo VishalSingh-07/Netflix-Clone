@@ -23,6 +23,6 @@ export { auth }
 export function Signup(email, password) {
 	return createUserWithEmailAndPassword(auth, email, password)
 }
-export function logIn(email, password,displayaname) {
-	return signInWithEmailAndPassword(auth, email, password,displayaname)
+export function logIn(email, password) {
+	return signInWithEmailAndPassword(auth, email, password)
 }

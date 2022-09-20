@@ -1,0 +1,43 @@
+.Footer {
+	color: grey;
+	padding: 4.5rem 0px 0 5rem;
+}
+/* .Links{
+      display: flex;
+      flex-direction: row;
+      gap:5%;
+      margin: 2rem 0 0rem 0;
+}
+.column{
+      display: flex;
+      flex-direction: column;
+      gap:10%;
+} */
+.Question > h3 {
+	margin: 2rem 0 2rem 0.2rem;
+}
+.Note > p {
+	margin: 2rem 0 2rem 0.4rem;
+}
+a {
+	text-decoration: none;
+	color: grey;
+	padding: 0.5rem;
+}
+.logo {
+	text-align: center;
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+}
+.social-link {
+	transition: transform 800ms;
+}
+.social-link:hover {
+      font-size: 1.8rem;
+	opacity: 1;
+}
+.CopyRight {
+	text-align: center;
+	margin-top: 1rem;
+	padding-bottom: 2rem;
+}

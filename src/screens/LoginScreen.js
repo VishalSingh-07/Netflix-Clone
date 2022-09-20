@@ -2,12 +2,12 @@ import React from "react"
 import "./LoginScreen.css"
 import logo from "../Image/Navbar/logo2.svg"
 import SignInScreen from "./SignInScreen"
+//import Loading from "../Components/Loading/Loading"
 // import datas from "../../src/data/data.json"
 // import AccordionCompound from "../Components/AccordionCompound"
 // import Feature from "../Components/Feature"
 function LoginScreen() {
 	const [signIn, setSignIn] = React.useState(false)
-
 	return (
 		<>
 			<div className="loginScreen">
@@ -48,6 +48,7 @@ function LoginScreen() {
 					)}
 				</div>
 			</div>
+
 			{/* <div>
 				{!signIn ? (
 					<div className="loginScreen__feature">
