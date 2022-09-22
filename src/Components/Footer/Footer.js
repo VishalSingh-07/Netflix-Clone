@@ -20,7 +20,7 @@ function Footer() {
 				<HeaderSocials  className="home_Social"/>
 			</div>
 			<div className="CopyRight">
-				<p>© 1997-2025 Netflix, Inc || All Right Reserved</p>
+				<p>© 1997-2025 Netflix, Inc  All Right Reserved</p>
 			</div>
 		</div>
 	)

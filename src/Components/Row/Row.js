@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import axios from "./axios"
+import axios from "../../axios"
 import "./Row.css"
 import YouTube from "react-youtube"
 import movieTrailer from "movie-trailer"
@@ -29,7 +29,7 @@ function Row({ Categorytitle, fetchURL, isLargeRow = false }) {
 		},
 	}
 	const handleClick = (movie) => {
-		if (trailerPath === '') {
+		if (trailerPath === "") {
 			movieTrailer(
 				movie?.name ||
 					movie?.title ||

@@ -2,10 +2,6 @@ import React from "react"
 import "./LoginScreen.css"
 import logo from "../Image/Navbar/logo2.svg"
 import SignInScreen from "./SignInScreen"
-//import Loading from "../Components/Loading/Loading"
-// import datas from "../../src/data/data.json"
-// import AccordionCompound from "../Components/AccordionCompound"
-// import Feature from "../Components/Feature"
 function LoginScreen() {
 	const [signIn, setSignIn] = React.useState(false)
 	return (
@@ -17,7 +13,7 @@ function LoginScreen() {
 						onClick={() => setSignIn(true)}
 						className="loginScreen_button"
 					>
-						Sign in
+						Sign In
 					</button>
 					<div className="loginScreen_gradient"></div>
 				</div>
@@ -48,25 +44,6 @@ function LoginScreen() {
 					)}
 				</div>
 			</div>
-
-			{/* <div>
-				{!signIn ? (
-					<div className="loginScreen__feature">
-						{datas.map((data) => (
-							<div>
-								<Feature
-									key={data.id}
-									title={data.title}
-									subTitle={data.subTitle}
-									image={data.image}
-									alt={data.alt}
-								/>
-							</div>
-						))}
-						<AccordionCompound />
-					</div>
-				) : null}
-			</div> */}
 		</>
 	)
 }

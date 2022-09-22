@@ -8,20 +8,17 @@ import { auth } from "./firebase"
 import { useDispatch, useSelector } from "react-redux"
 import { login, logout, selectUser } from "./features/userSlice"
 function App() {
-	// const user = null;
 	const user = useSelector(selectUser)
 	const dispatch = useDispatch()
 	useEffect(() => {
 		const unsubscribe = auth.onAuthStateChanged((userAuth) => {
 			if (userAuth) {
 				// Logged In
-				// console.log("User is loggedIn")
-				// console.log(userAuth)
 				dispatch(
 					login({
 						uid: userAuth.uid,
 						email: userAuth.email,
-						displayname:userAuth.displayName
+						displayname: userAuth.displayName,
 					})
 				)
 			} else {

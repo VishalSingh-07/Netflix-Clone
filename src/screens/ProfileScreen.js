@@ -1,5 +1,5 @@
 import React from "react"
-import Nav from "../Nav"
+import Nav from "../Components/Nav/Nav"
 import "./ProfileScreen.css"
 import Avatar from "../Image/Navbar/Avatar.png"
 import { useSelector } from "react-redux"
@@ -31,46 +31,6 @@ function ProfileScreen() {
 				<div className="Motivator">
 					<h1>Subscribe Now to Start Watching</h1>
 				</div>
-				{/* <div className="Netflix_plans">
-					<div className="profileScreen_plan">
-						<div className="profileScreen_planInfo">
-							<h5>NetFlix Mobile</h5>
-							<p>Mobile Only</p>
-							<p>480p SD Streaming</p>
-							<h4>₹149/month</h4>
-						</div>
-
-						<button>Activate Now</button>
-					</div>
-					<div className="profileScreen_plan">
-						<div className="profileScreen_planInfo">
-							<h5>NetFlix Basic</h5>
-							<p>Two Screens</p>
-							<p>720p HD Streaming</p>
-							<h4>₹199/month</h4>
-						</div>
-
-						<button>Activate Now</button>
-					</div>
-					<div className="profileScreen_plan">
-						<div className="profileScreen_planInfo">
-							<h5>Netflix Standard</h5>
-							<p>Max 5 Screens</p>
-							<p>1080p Full HD Streaming</p>
-							<h4>₹499/month</h4>
-						</div>
-						<button>Activate Now</button>
-					</div>
-					<div className="profileScreen_plan">
-						<div className="profileScreen_planInfo">
-							<h5>Netflix Premium</h5>
-							<p>Unlimited Screens</p>
-							<p>4k+HDR Streaming</p>
-							<h4>₹649/month</h4>
-						</div>
-						<button>Activate Now</button>
-					</div>
-				</div> */}
 				<div className="Netflix_plans">
 					{Plans.map((planItem) => (
 						<div className="profileScreen_plan">

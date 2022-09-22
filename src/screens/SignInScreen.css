@@ -1,8 +1,7 @@
 .signUpScreen {
 	max-width: 300px;
 	padding: 70px;
-	margin-left: auto;
-	margin-right: auto;
+	margin:0 auto 0 auto;
 	background: rgba(0, 0, 0, 0.85);
 	border-radius: 15px;
 	border: 0.01px solid rgba(255, 255, 255, 0.514);
@@ -16,10 +15,13 @@
 	flex-direction: column;
 }
 .signUpScreen > form > h1 {
+	font-family: 'Roboto', sans-serif;
 	text-align: left;
 	margin-bottom: 25px;
 }
 .signUpScreen > form > input {
+	font-family: 'Arvo', serif;
+	letter-spacing: 1px;
 	outline-width: 0;
 	height: 40px;
 	margin-bottom: 14px;
@@ -28,17 +30,19 @@
 	padding: 5px 15px;
 }
 .signUpScreen > form > button {
+	font-family: 'Open Sans', sans-serif;
 	padding: 16px 20px;
 	font-size: 1rem;
 	color: #fff;
 	border-radius: 5px;
 	background-color: #e50914;
-	font-weight: 550;
+	font-weight: bold;
 	border: none;
 	cursor: pointer;
 	margin-top: 20px;
 }
 .signUpScreen > form > h4 {
+	font-family: 'Roboto', sans-serif;
 	text-align: left;
 	margin-top: 30px;
 }

@@ -1,13 +1,12 @@
 .profileScreen {
-	height: 100vh;
+	height: 120vh;
 	color: white;
 }
 .profileScreen_body {
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto 0 auto;
 	padding-top: 8%;
 	max-width: 1000px;
 }
@@ -16,10 +15,12 @@
 	margin-top: 3rem;
 }
 .profileScreen_body > h1 {
+	border-bottom: 2px solid #282c2d;
+	font-family: "Roboto", sans-serif;
 	font-size: 60px;
 	font-weight: 400;
-	border-bottom: 2px solid #282c2d;
 	margin-bottom: 20px;
+	letter-spacing: 2px;
 }
 .profileScreen_info > img {
 	height: 100px;
@@ -34,27 +35,33 @@
 	gap: 1%;
 }
 .Motivator {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.2rem;
 	text-align: center;
-	margin-top: 4rem;
-	margin-bottom: 1rem;
+	margin: 4rem 0 1rem 3rem;
 }
 .profileScreen_details > h2 {
+	font-family: "Open Sans", sans-serif;
+	letter-spacing: 1px;
+	word-spacing: 1rem;
 	padding: 15px;
 	font-size: 30px;
 	padding-left: 40px;
 }
 .profileScreen_signOut {
-	padding: 10px 20px;
-	font-size: 1rem;
-	margin-left: 10rem;
-	width: 15%;
-	height: 60%;
-	color: #fff;
-	background-color: #e50914;
-	font-weight: 600;
 	border: none;
-	cursor: pointer;
+	background-color: #e50914;
 	border-radius: 10px;
+	cursor: pointer;
+	color: #fff;
+	font-family: "Roboto Slab", serif;
+	font-weight: 600;
+	font-size: 1.2rem;
+	letter-spacing: 2px;
+	margin-left: 10rem;
+	height: 60%;
+	padding: 10px 20px;
+	width: 17%;
 	transition: transform 400ms;
 }
 .profileScreen_signOut:hover {
@@ -76,8 +83,11 @@
 .Netflix_plans {
 	display: flex;
 	flex-direction: row;
+	font-family: "Open Sans", sans-serif;
+	letter-spacing: 0.5px;
 	gap: 5%;
 	width: 120%;
+	margin-left: -7rem;
 }
 .profileScreen_plan {
 	display: flex;
@@ -87,7 +97,6 @@
 	opacity: 1;
 	border: 1px solid red;
 	border-radius: 10px;
-	z-index: 1;
 	margin-top: 4rem;
 	text-align: center;
 	width: 120%;
@@ -100,7 +109,7 @@
 	opacity: 1;
 }
 .profileScreen_planInfo > h5 {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	color: #000;
 	margin-bottom: 15px;
 }
@@ -118,6 +127,8 @@
 }
 
 .profileScreen_plan > button {
+	font-family: "Roboto Slab", serif;
+	letter-spacing: 2px;
 	padding: 10px 20px;
 	font-size: 1rem;
 	color: white;
@@ -129,6 +140,206 @@
 	max-height: 50px;
 	border-radius: 7px;
 }
-/* .profileScreen_disabled {
-    background-color: grey !important;
-} */
+
+@media (min-width: 100px) and (max-width: 580px) {
+	.profileScreen_body {
+		width: 90%;
+	}
+	.profileScreen_body > h1 {
+		margin-left: 0.5rem;
+		margin-top: 6rem;
+		font-size: 2.2rem;
+	}
+	.profileScreen_info {
+		display: flex;
+		margin-top: 3rem;
+	}
+	.profileScreen_info > img {
+		width: 30%;
+		margin-left: 0.5rem;
+	}
+	.profileScreen_details {
+		display: flex;
+		flex-direction: column;
+		width: 60%;
+		gap: 5%;
+	}
+	.profileScreen_details > h2 {
+		width: 10%;
+		font-size: 1.3rem;
+		position: absolute;
+	}
+	.profileScreen_signOut {
+		position: relative;
+		right: 14rem;
+		top: 8rem;
+		width: 100%;
+		height: 60%;
+	}
+	.Motivator {
+		position: relative;
+		top: 4rem;
+		right: 2rem;
+		font-size: 1rem;
+	}
+	.Netflix_plans {
+		display: flex;
+		flex-direction: column;
+		margin: 2rem 0 0 1rem;
+		width: 60%;
+	}
+	.profileScreen_plan {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.profileScreen {
+		height: 100%;
+	}
+}
+
+@media (min-width: 581px) and (max-width: 768px) {
+	.profileScreen_body {
+		width: 90%;
+	}
+	.profileScreen_body > h1 {
+		margin: 6rem 0 0 0.5rem;
+
+		font-size: 2.2rem;
+	}
+	.profileScreen_info {
+		display: flex;
+		margin-top: 3rem;
+	}
+	.profileScreen_info > img {
+		width: 30%;
+		margin-left: 0.5rem;
+	}
+	.profileScreen_details {
+		display: flex;
+		flex-direction: column;
+		width: 60%;
+		gap: 5%;
+	}
+	.profileScreen_details > h2 {
+		width: 10%;
+		font-size: 1.3rem;
+		position: absolute;
+	}
+	.profileScreen_signOut {
+		position: relative;
+		right: 14rem;
+		top: 8rem;
+		width: 100%;
+		height: 60%;
+	}
+	.Motivator {
+		position: relative;
+		top: 4rem;
+		right: 2rem;
+		font-size: 1rem;
+	}
+
+	.profileScreen {
+		height: 100%;
+	}
+	.Netflix_plans {
+		display: flex;
+		flex-direction: column;
+		margin: 2rem 0 0 3rem;
+
+		width: 60%;
+	}
+	.profileScreen_plan {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.profileScreen_body {
+		width: 90%;
+	}
+	.profileScreen_body > h1 {
+		margin: 6rem 0 0 0.5rem;
+		font-size: 2.2rem;
+	}
+	.profileScreen_info {
+		display: flex;
+		margin-top: 3rem;
+	}
+	.profileScreen_info > img {
+		width: 20%;
+		margin-left: 0.5rem;
+	}
+	.profileScreen_details {
+		display: flex;
+		flex-direction: column;
+		width: 60%;
+		gap: 5%;
+	}
+	.profileScreen_details > h2 {
+		width: 60%;
+		font-size: 1.5rem;
+		position: absolute;
+	}
+	.profileScreen_signOut {
+		position: relative;
+		right: 0rem;
+		top: 8rem;
+		width: 60%;
+		height: 60%;
+	}
+	.Motivator {
+		position: relative;
+		top: 4rem;
+		right: 2rem;
+		font-size: 1rem;
+	}
+
+	.profileScreen {
+		height: 100%;
+	}
+	.Netflix_plans {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 25%;
+		margin: 4rem 0 4rem 1.5rem;
+		width: 80%;
+	}
+	.profileScreen_plan {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+	.profileScreen {
+		height: 100%;
+	}
+	.profileScreen_details > h2 {
+		width: 60%;
+		font-size: 1.5rem;
+		position: absolute;
+	}
+	.profileScreen_signOut {
+		position: relative;
+		left: 16rem;
+		top: 0.5rem;
+		width: 40%;
+		height: 60%;
+	}
+	.Netflix_plans {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 25%;
+		margin: 4rem -7rem 4rem;
+		width: 80%;
+	}
+	.profileScreen_plan {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}

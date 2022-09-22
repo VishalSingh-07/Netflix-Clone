@@ -65,7 +65,7 @@ function SignInScreen() {
 
 				<h4>
 					<span className="signupScreen_gray">
-						{signup ? "Already have an account? " : "New to Netflix? "}
+						{signup ? "Already have an account? " : "New to Netflix?   "}
 					</span>
 					<span
 						className="signupScreen_link"

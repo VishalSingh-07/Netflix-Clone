@@ -1,7 +1,10 @@
 .row {
 	color: white;
-	margin-left: 20px;
-	margin-top: 4rem;
+	margin: 4rem 0 0 20px;
+}
+.row > h2 {
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 2px;
 }
 .row_posters {
 	display: flex;
@@ -89,30 +92,32 @@
 }
 
 .info__button {
+	align-items: center;
 	background-color: rgba(100, 100, 100, 0.5);
+	border-radius: 4px;
 	color: inherit;
+	cursor: pointer;
+	display: flex;
 	font-weight: 500;
 	font-family: inherit;
 	font-size: 2rem;
 	border: none;
 	padding: 1.5rem 3rem;
 	min-width: 10rem;
-	border-radius: 4px;
-	display: flex;
-	align-items: center;
 	transition: all 0.1s;
-	cursor: pointer;
 }
 
 .info__button--play {
+	font-family: "Roboto Slab", serif;
+	letter-spacing: 2px;
+	font-weight: bold;
 	color: #333;
 	background-color: #fff;
 	font-size: 1.5rem;
 }
 
 .info__button span {
-	margin-top: -0.4vw;
-	margin-left: 1rem;
+	margin: -0.4vw 0 0 1rem;
 }
 
 .info__button--play:hover {
@@ -125,18 +130,21 @@
 
 .info__overlay--text h1 {
 	font-size: 2.5rem;
+	font-family: "Roboto", sans-serif;
 }
 
 .info__overlay--text h2 {
 	font-size: 2rem;
-	margin-bottom: 3rem;
 	font-weight: 300;
 	font-style: italic;
+	font-family: "Roboto", sans-serif;
+	margin-bottom: 3rem;
 }
 
 .info__overlay--text p {
-	line-height: 1.6;
 	font-size: 1.5rem;
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.6;
 }
 
 .info__overlay--btnClose {
@@ -144,8 +152,7 @@
 	top: 0;
 	right: 0;
 	border: none;
-	margin-top: 1.5rem;
-	margin-right: 1.5rem;
+	margin:1.5rem 1.5rem 0 0;
 	font-size: 2rem;
 	z-index: 50;
 	cursor: pointer;
@@ -188,6 +195,7 @@
 }
 
 .error__description {
+	font-family: "Roboto", sans-serif;
 	font-family: inherit;
 	font-size: 2rem;
 	font-weight: 300;
@@ -264,14 +272,58 @@
 	}
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
+	.info__overlay--contentBox {
+		width: 20rem;
+	}
+	.info__overlay--videoBox {
+		width: 100%;
+	}
+
+	.info__overlay--youtube {
+		height: 25rem;
+	}
+
+	.info__button--play {
+		display: none;
+	}
+	.info__button {
+		font-size: 0.5rem;
+	}
+
+	.info__overlay--iconBox {
+		display: none;
+	}
+
+	.info__overlay--text h1 {
+		font-size: 1.5rem;
+	}
+
+	.info__overlay--text h2 {
+		font-size: 1rem;
+	}
+
 	.info__overlay--text p {
-		font-size: 2rem;
+		font-size: 0.8rem;
 	}
 }
+@media (min-width: 100px) and (max-width: 480px) {
+	.row_poster {
+		width: 80%;
+	}
+	.row_posterLarge {
+		max-height: 200px;
+	}
 
-@media (max-width: 350px) {
-	.rows {
-		top: -5rem;
+	.error {
+		width: 40%;
+	}
+
+	.error__heading {
+		font-size: 1.5rem;
+	}
+
+	.error__description {
+		font-size: 1rem;
 	}
 }
